@@ -1,7 +1,4 @@
-#include "pico/stdlib.h"
-
-#define TOTAL_LEDS 25
-
+#include "animation.h"
 
 int numbers[10][5][5][3] = {
     // número 0
@@ -85,3 +82,9 @@ int numbers[10][5][5][3] = {
         {{0, 0, 0}, {0, 191, 255}, {0, 191, 255}, {0, 191, 255}, {0, 191, 255}}
     }
 };
+
+void cor(const uint index, const uint8_t r, const uint8_t g, const uint8_t b) {
+    leds[index].R = r;
+    leds[index].G = g;
+    leds[index].B = b;
+}
