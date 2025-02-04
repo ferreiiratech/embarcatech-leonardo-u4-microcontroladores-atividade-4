@@ -17,6 +17,6 @@ void set_led_color(uint pin, bool status);
 void init_led_matrix(uint pin);
 void set_led_rgb(const uint index, const uint8_t r, const uint8_t g, const uint8_t b);
 void buffer(void);
-int getIndex(int x, int y);
+int get_index(int x, int y);
 
 #endif

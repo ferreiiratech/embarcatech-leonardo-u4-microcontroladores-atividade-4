@@ -42,7 +42,7 @@ void buffer() {
 }
 
 // Função para obter o índice do LED com base nas coordenadas x e y.
-int getIndex(int x, int y) {
+int get_index(int x, int y) {
     // Se a linha for par (0, 2, 4), percorremos da esquerda para a direita.
     // Se a linha for ímpar (1, 3), percorremos da direita para a esquerda.
     if (y % 2 == 0) {
